@@ -1,0 +1,12 @@
+.box{
+    width: 100px;height: 100px;background-color: yellow; margin: 15px;
+}
+.size{
+    width: 250px;height: 250px;border-radius: 50%;margin: 20px;
+}
+.bg{
+    background: lime;
+}
+:global .con-box{
+    background: green;width: 150px;height: 150px;margin: 10px;
+}

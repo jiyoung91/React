@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter 중요</title>
+    <script>
+        const arr1 = [10,20,30,40,50]
+        const data =[
+            {id:1, name:'강호동'},
+            {id:2, name:'강호2'},
+            {id:3, name:'강호3'},
+            {id:4, name:'강호4'},
+            {id:5, name:'강호5'},
+        ]
+        //filter 결과 : 배열
+        //배열.filter(현재값=>조건) :결과 배열
+        const arr2 = arr1.filter(item=>{
+            return item>30
+        })
+        console.log(arr2)
+
+        const arr3 = arr1.filter(item => item>=40)
+        console.log(arr3)
+        
+        const arr4 = arr1.filter(item => item !== 30)
+        console.log(arr4)
+
+        const arr5 = data.filter(item => item.id === 3)
+        console.log(arr5)
+
+
+
+    </script>
+</head>
+<body>
+    <pre>
+        Array.prototype.filter() : 조건에 맞는 결과를 새로운배열로 반환함.
+        
+        arr.filter(callback(element[, index[, array]])[, thisArg])
+        arr.filter(function(현재값 =>{
+            return 조건
+        }))
+        arr.filter(현재값 =>조건)
+
+        매개변수
+        callback :함수
+        element :현재값
+        index  :인덱스
+
+        반환 값 :조건에 맞는 새로운 배열
+
+    </pre>
+</body>
+</html>

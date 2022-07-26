@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>   </title>
+    <script>
+        const data =[
+            {id:1, name:'강호동'},
+            {id:2, name:'강호2'},
+            {id:3, name:'강호3'},
+            {id:4, name:'강호4'},
+            {id:5, name:'강호5'},
+        ]
+        //추가
+        const data1 = data.concat()
+        const data2 = data.concat({id:6, name:'최우식'})
+        console.log(data1)
+        console.log(data2)
+
+        const data3 = [...data]
+        const data4 = [...data, {id:7,name:'김다미'}]
+        console.log(data3)
+        console.log(data4)
+
+        //갱신
+        const data5 = data.map(item => {
+            if(item.id === 1){
+                return {
+                    ...item ,//복사
+                    name :'김다미미'//갱신
+                }
+            }else{
+                return item
+            }
+        })
+        console.log(data5)
+
+        //갱신
+        const data6 = data.map(item => item.id === 2 ? {...item,name:'남주혁'} : item)
+        console.log(data6)
+
+
+    </script>
+</head>
+<body>
+    <pre>
+
+    </pre>
+</body>
+</html>

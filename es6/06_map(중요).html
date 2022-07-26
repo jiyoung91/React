@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map 중요</title>
+    <script>
+        //map : 반복
+        const arr1 = [10,20,30,40,50]
+        arr1.map(function(item,idx){
+            return console.log(item,idx)
+        })
+        arr1.map((item,index)=> console.log(item))
+
+        //배열
+        const data =[
+            {id:1, name:'강호동'},
+            {id:2, name:'강호2'},
+            {id:3, name:'강호3'},
+            {id:4, name:'강호4'},
+            {id:5, name:'강호5'},
+        ]
+        data.map((item,index) =>{
+            return console.log(item.id, item.name, index)
+        })
+
+        data.map((item,idx)=>console.log(item,idx))
+
+    </script>
+</head>
+<body>
+    <pre>
+        map() 메서드는 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환합니다.
+   
+        arr.map(callback(currentValue[, index[, array]])[, thisArg])
+        arr.map(함수(현재값,인덱스){
+
+        })
+        arr.map(function(변수,변수){
+            return 값
+        })
+        arr.map((변수,변수) => {
+            /* {}사용하면 return 꼭 써야함 */
+            return 값
+        })
+        /* 결과가 1개일때 :일급함수!!! */
+        arr.map((변수,변수)=> 값 )
+
+        매개변수
+        callback :function
+        currentValue : 현재값
+        index Optional :인덱스
+        
+        반환 값
+        배열의 각 요소에 대해 실행한 callback의 결과를 모은 
+        새로운 배열!!!
+
+    </pre>
+</body>
+</html>

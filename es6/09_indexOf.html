@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> indexOf </title>
+    <script>
+        const arr1 = ['딸기','우유','초코','바나나','수박','오이','수수']
+        const txt = '수'
+
+        //filter + indexOf 수 결과 
+        const re1 = arr1.filter(item => item.indexOf(txt) !== -1)
+        console.log(re1)
+
+        const data = [
+            {text:'친구와 영화보기'},
+            {text:'친구와 저녁먹기'},
+            {text:'친구와 자전거타기'},
+            {text:'친구와 주말영화'},
+            {text:'친구와 테니스치기'},
+        ]
+        const txt1 = '영화'
+        const re2 = data.filter(item =>item.text.indexOf(txt1) !== -1)
+        console.log(re2)
+        
+
+    </script>
+</head>
+<body>
+    <pre>
+
+    </pre>
+</body>
+</html>

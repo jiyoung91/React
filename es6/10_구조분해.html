@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 객체,구조분해 </title>
+    <script>
+        let data = {
+            name : '홍길동',
+            age : 20, 
+            addr : '서울',
+            tel : '010-2222-1234'
+        }
+        console.log(data.name, data.age, data.addr, data.tel)
+        console.log(data['name'], data['age'], data['addr'], data['tel'])
+
+        //구조분해, 비구조할당
+        const {name, age, addr, tel} = data 
+        console.log(name, age, addr, tel)
+
+        let data1 ={
+            a:10,
+            b:30,
+            c:50,
+        }
+        console.log(data1.a, data1['b'])
+        const {a,b,c} = data1
+        console.log(a,b,c)
+
+    </script>
+</head>
+<body>
+    <pre>
+
+    </pre>
+</body>
+</html>
