@@ -16,7 +16,7 @@ const Test5 = () => {
             console.log('정리')
             clearInterval(timer)//정리
         }
-    },[text])//text
+    },[text])//text 변할때 마다 
 
     return (
         <div>

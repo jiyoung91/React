@@ -15,7 +15,7 @@ const MemberDetail = () => {
     useEffect(()=>{
         const url = `https://jsonplaceholder.typicode.com/users/${memberID}`
         axios.get(url)
-        .then( res => setMember( res.data ))
+        .then( res => setMember( res.data ))//setMember
     },[])
     const {name,email,phone,website} = member
     const onGo = ()=>{

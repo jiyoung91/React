@@ -9,7 +9,7 @@ const App = () => {
     <div>
        <Todos />
        <hr/>
-        <Friend />
+       <Friend />
     </div>
   );
 };

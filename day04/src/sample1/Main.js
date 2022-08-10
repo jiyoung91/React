@@ -17,9 +17,8 @@ const Main = () => {
         sex:'',
         inter:''
     })
-    const [step,setStep] =useState(1)
-
     const {username,age,tel,addr,job,email,sex,inter } = form
+    const [step,setStep] =useState(1)
     const changeInput =(e)=>{
         const {name,value}=e.target
         setForm({

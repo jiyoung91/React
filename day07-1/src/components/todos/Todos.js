@@ -5,16 +5,12 @@ import styles from './Todos.module.css';
 
 const Todos = () => {
     const no = useRef(1)
-    
-    //내용기억 localStorage (새로고침해도 그대로)
     const [ data , setData ] = useState(
         () => JSON.parse( localStorage.getItem('data')) || []
     )
-    //내용기억 localStorage
     useEffect(()=>{
         localStorage.setItem('data',JSON.stringify(data))
     },[data])
-
     const onDel = (id) => {
         setData( data.filter( todo => todo.id !== id ))
     }  
@@ -29,10 +25,12 @@ const Todos = () => {
       ])
     }    
     const onToggle = ( id )  => {
-      setData( data.map( todo => todo.id === id ? { ...todo , isActive: !todo.isActive } : todo ))
+      setData( data.map( todo => todo.id === id ?
+        { 
+        ...todo , 
+        isActive: !todo.isActive 
+        } : todo ))
     }
-
-
     return (
         <div className={styles.Todos}>
             <h1>일정관리앱</h1>

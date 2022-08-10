@@ -14,7 +14,8 @@ const Test5 = () => {
             <p>{done3 ||<span>조회된 글이 없습니다.</span>}</p>
            {/* 다중 if문과 동일하게 처리 
            조건1 && 결과1
-           
+           || false :출력
+           || undefined :출력
            */}
         
         </>

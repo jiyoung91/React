@@ -51,7 +51,7 @@ const Test7 = () => {
             <ul>
                 {
                     data.map(item => 
-                     <li key={item.id}> {item.id} / {item.name} </li>) 
+                     <li key={item.id}> {item.id} : {item.name} </li>) 
                 }
             </ul>
 
@@ -61,3 +61,4 @@ const Test7 = () => {
 };
 
 export default Test7;
+

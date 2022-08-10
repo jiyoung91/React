@@ -5,9 +5,9 @@ const FriendItem = ({friend}) => {
 
     return (
         <li>
-           <p> <img src={friend.image} alt="" /> </p> 
-           <div> <strong>이름: {friend.name} </strong>
-                 <span>나이: {friend.age} </span>
+           <p> <img src={image} alt="" /> </p> 
+           <div> <strong>이름: {name} </strong>
+                 <span>나이: {age} </span>
            </div>
         </li>
     );

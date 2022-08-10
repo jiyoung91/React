@@ -8,16 +8,13 @@ const Front = () => {
     
     return (
         <div>
-            <h1>Front page</h1>    
-            <h2> { name } 받기 </h2>    
-            <hr />
+            <h1>Front page: { name } 받기 </h1>    
             {
                 data.filter( item => item.title === name )
-                         .map( (item, index) => <div key={index}>
-                            <h2>{item.title}</h2>
-                            <h2>{item.info}</h2>
-                         </div>)
-            }
+                    .map( (item, index) => <div key={index}>
+                    <h2>{item.title} : {item.info}</h2>
+                    </div>)
+    }
         </div>
     );
 };

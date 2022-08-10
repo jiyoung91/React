@@ -46,7 +46,9 @@ const Friend = () => {
                     isChk? '추가비활성' : '추가활성'
                 }
             </p>
+            
             <FriendList data={data} onDel={onDel}/>
+
             <p className='btn'>
                 <button onClick={onRemove}>모두 삭제</button>
                 <button onClick={onReset}>초기복구</button>

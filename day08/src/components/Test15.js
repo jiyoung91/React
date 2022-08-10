@@ -2,7 +2,6 @@ import React from 'react';
 import { useFetch } from '../hooks/useFetch'
 
 const Test15 = () => {
-    // const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/posts')
     const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/todos')
 
     return (

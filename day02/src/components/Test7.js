@@ -3,10 +3,10 @@ import React from 'react';
 const Sub = (props) => {
     const {name, age } = props
     return (
-        <div style={{borderBottom:'1px slid #000',marginBottom:15 }}>
+        <div style={{borderBottom:'1px solid #000',marginBottom:15 }}>
             {/* 자식컴포넌트 */}
-            <h3>{name} {typeof name}</h3>
-            <h3>{age} {typeof age}</h3>
+            <h3>{name}: {typeof name}</h3>
+            <h3>{age}: {typeof age}</h3>
         </div>
     );
 };
@@ -19,7 +19,7 @@ const Test7 = () => {
             <h2>props 설명</h2>
             <Sub name="김다미" age="20"/>
             <Sub name="김태리" age={25}/>
-            <Sub name={data1.name} age ={data1.age} />
+            <Sub name={data1.name} age ={data2.age} />
           
         </>
     );

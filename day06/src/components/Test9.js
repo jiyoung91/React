@@ -4,8 +4,6 @@ const Test9 = () => {
     const [count , setCount] = useState(
         ()=>JSON.parse(localStorage.getItem('count')) || 0 
     ) 
-    // const [count , setCount] = useState(0 )
-   
     useEffect(()=>{
         localStorage.setItem('count', JSON.stringify(count))//키 입력
     },[count])
@@ -25,7 +23,7 @@ const Test9 = () => {
             <p>
                 <button onClick={increment}>증가</button>
                 <button onClick={decrement}>감소</button>
-                <button onClick={onDel}>삭제</button>
+                <button onClick={onDel}>localStorage 삭제</button>
             </p>
         </div>
     );

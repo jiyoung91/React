@@ -23,8 +23,7 @@ const Test1 = () => {
             <hr />
             {
                 password.length > 6 ? 
-                <button>로그인</button> :
-                <button disabled>로그인</button>
+                <button>로그인</button> : <button disabled>로그인</button>
             }
             
         </div>

@@ -8,9 +8,11 @@ const Test11 = () => {
     }
     return (
         <>
-            <h2>h1클릭하면 pink -blue 배경색 글자 변경하기 왕복</h2>
-            <h1 style={{padding:30, border:'1px solid #000', margin:20, fontSize:20,
-                backgroundColor:bgColor ,cursor:'pointer'}}
+            <h2>h1클릭하면 pink-blue 배경색 글자 변경하기 왕복</h2>
+            <h1 style={{padding:30, border:'1px solid #000', 
+                margin:20, fontSize:20,
+                backgroundColor:bgColor ,
+                cursor:'pointer'}}
                 onClick={onColor}>
                 backgroundColor : {bgColor}
             </h1>

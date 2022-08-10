@@ -25,8 +25,8 @@ const Test8 = () => {
     return (
         <div>
             <p>
-                <button onClick={onMsg1}>메세지</button>
-                <button onClick={onMsg2}>메세지</button>
+                <button onClick={onMsg1}>전부 삭제</button>
+                <button onClick={onMsg2}>전부 복구</button>
             </p>
             <hr/>
             <Test8Sub msg={msg} isShow={isShow} setIsShow={setIsShow} />

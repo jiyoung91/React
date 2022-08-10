@@ -21,7 +21,7 @@ const Test4 = () => {
         setData(user.filter(item=>item.name.toLowerCase().includes(text.toLowerCase())))//user 원본으로 검색
     },[text])
 
-    user.filter(item=>item.name.toLowerCase().includes(text.toLowerCase()))
+    //user.filter(item=>item.name.toLowerCase().includes(text.toLowerCase()))
 
     return (
         <div>
@@ -32,7 +32,6 @@ const Test4 = () => {
                 data.map(item => <li key={item.id}>
                     {item.id} : {item.name}
                 </li>)
-
             }
         </ul>
         </div>

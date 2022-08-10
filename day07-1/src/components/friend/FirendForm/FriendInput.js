@@ -3,12 +3,10 @@ import styles from './FriendInput.module.css';
 
 const FriendInput = ({onAdd}) => {
     const nameRef = useRef()
-
     const [form , setForm ] = useState({
         name:'' , age:'' , image:'' 
     })
     const { name , age , image } = form 
-
     const changeInput = (e) => {
         const { name , value } = e.target 
         setForm({
@@ -19,14 +17,12 @@ const FriendInput = ({onAdd}) => {
     const onSubmit = (e) => {
         e.preventDefault() 
         if( !name || !age || !image ) return 
-        
         onAdd( form )
         setForm({
             name:'', age:'', image:''
         })
         nameRef.current.focus()
     }
-
     return (
         <form className={styles.formadd} onSubmit={onSubmit}>
             <p>

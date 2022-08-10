@@ -10,7 +10,8 @@ export const useAxios = (url) => {
     useEffect(()=>{
         axios.get(url)
         .then(res=>{
-            setData(res)
+            console.log(res)
+            setData(res )
             setError(null)
             setLoading(true)
         })

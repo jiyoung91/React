@@ -18,6 +18,7 @@ const Test2 = () => {
             <p>
                 <button onClick={onShow}>보이기</button>
                 <button onClick={onHide}>숨기기</button>
+                <hr />
                 <button onClick={onToggle}>{isShow?'숨기기':'보이기'}</button>
             </p>
             <hr/>

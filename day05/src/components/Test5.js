@@ -12,9 +12,6 @@ const Test5 = () => {
     const onAdd=(e)=>{
         e.preventDefault()//submit 사용시
         if(!text || !addr) return 
-        // if(text.length === 0 || addr.length === 0){
-        //     return 
-        // }
         setData([
             ...data,
             {

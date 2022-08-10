@@ -8,15 +8,12 @@ const handleClick1 =() =>{
 const handleClick2 =() =>{
     alert('test2')
 }
-const handleClick3 =() =>{
-    alert('test3')
-}
 const make = (num) =>{
-    alert(`$num`)//안되는게맞음
+    alert(`${num}`)
 }
 
 const make1 = (num1,num2) =>{
-    alert(`$num1+$num2 입니다.`)//안되는게맞음
+    alert(`${num1+num2} 입니다.`)
 }
 
     return (
@@ -25,7 +22,6 @@ const make1 = (num1,num2) =>{
             <p>
                 <button onClick ={handleClick1}>클릭</button>
                 <button onClick ={handleClick2}>클릭</button>
-                <button onClick ={handleClick3}>클릭</button>
             </p>
             <p>
                 <button onClick={()=>{

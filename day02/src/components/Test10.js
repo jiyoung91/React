@@ -18,7 +18,7 @@ const Test10 = () => {
     return (
         <div>
             <h3 style={{backgroundColor:color, padding:10,margin:10}}>
-                이름/{name} , 나이/{age}, 컬러/{color} </h3>
+                이름:{name} , 나이:0{age}, 컬러:{color} </h3>
             <p>
                 <button onClick={ onName1 }>김태리 </button>
                 <button onClick={ onName2 }>김다미 </button>

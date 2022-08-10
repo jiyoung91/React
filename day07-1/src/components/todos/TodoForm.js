@@ -11,14 +11,11 @@ const TodoForm = ({ onAdd }) => {
     }
     const onSubmit = (e)  => {
         e.preventDefault() 
-
         if( !text ) return
-
         onAdd( text )
         setText('')
         textRef.current.focus() 
     }
-
     return (
         <form className={styles.TodoForm} onSubmit={ onSubmit }>
             <input type="text" value={text} onChange={ changeInput } ref={textRef} placeholder="할일을 입력하세요" />

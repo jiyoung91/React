@@ -11,31 +11,24 @@ const Friend = () => {
         ()=>JSON.parse(localStorage.getItem('friends'))|| datalist
      )
     const [ isView , setIsView ] = useState( false )
-
     //내용기억 localStorage
     useEffect(()=>{
         localStorage.setItem('friends', JSON.stringify(friends))
     },[friends])
-
-
     const onDel = ()  => {
         setFriends([])
     }
     const onRestore = ()  => {
         setFriends(datalist)
     }
-
-    //추가
     const onAdd = ( form ) => {
         form.id = no.current++
         setFriends([
             ...friends, form 
         ])
     }
-
     return (
         <div className={styles.wrap}>
-            {/* <h1>친구들 총인원: { datalist.length } </h1> */}
             <h1>친구들 총인원: { friends.length } </h1>
             <p className={styles.chk}>
                 <input type="checkbox"  checked={isView} 
@@ -43,14 +36,11 @@ const Friend = () => {
                 />
                 활성 / 비활성 
             </p>
-
             <FriendList  friends={friends} />
-
             <p className={styles.btn}>
                 <button onClick={ onDel }>모두 삭제</button>
                 <button onClick={ onRestore }>초기 복구</button>
             </p>
-
             {
                 isView && <FriendInput onAdd={onAdd} />
             }

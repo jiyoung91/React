@@ -18,10 +18,10 @@ const Customer = () => {
         //localStorage 값 조회
         ()=>JSON.parse(localStorage.getItem('data'))|| dataList
     )
-    const [isEdit, setIsEdit] = useState(false)
+    const [isEdit, setIsEdit] = useState(false)//수정화면 보이게
     const [current,setCurrent] = useState({})
     const [msg,setMsg] = useState('test')
-    const [isShow, setIsShow] = useState(false)
+    const [isShow, setIsShow] = useState(false)//msg 보이게
   
     useEffect(()=>{
         //localStorage 값 입력
@@ -42,13 +42,12 @@ const Customer = () => {
     const onEdit =(user)=>{
         setIsEdit(true)
         setCurrent(user)
-        setIsShow(true)
-        setMsg('명단 수정했습니다.')
     }
     const onUpdate=(user)=>{
         setIsEdit(false)
         setData(data.map(item=>item.id === user.id? user : item ))
-
+        setIsShow(true)
+        setMsg('명단 수정했습니다.')
     }
     return (
         <div className='Customer'>

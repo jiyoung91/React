@@ -1,14 +1,14 @@
 import React from 'react';
-// import Business from './sample/Business';
+import Business from './sample/Business';
 // import MainTest from './sample/MainTest';
-import Test13 from './components/Test13';
+// import Test12 from './components/Test12';
 
 const App = () => {
   return (
     <div>
-      <Test13 />
-      {/* <MainTest /> */}
-      {/* <Business /> */}
+      {/* <Test12 /> */}
+      {/* <MainTest /> 하드코딩 */}
+      <Business />
     </div>
   );
 };

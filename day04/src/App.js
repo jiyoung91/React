@@ -1,10 +1,14 @@
 import React from 'react';
-import Test7 from './components/Test7';
+import Gallery from './sample2/Gallery';
+// import Main from './sample1/Main';
+// import Test7 from './components/Test7';
 
 const App = () => {
   return (
     <div>
-      <Test7 />
+      {/* <Test7 /> */}
+      {/* <Main /> */}
+      <Gallery />
     </div>
   );
 };

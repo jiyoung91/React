@@ -24,9 +24,9 @@ const Test4 = () => {
                  {/* 템플릿리터럴 */}
                 <p className={`test ${isClass ? 'on':''}`}>오늘은 일요일입니다.</p>
                 <div>
-                    <button onClick={onAdd}>classList.add</button>
-                    <button onClick={onRemove}>classList.remove</button>
-                    <button onClick={onToggle}>classList.toggle</button>
+                    <button onClick={onAdd}>add</button>
+                    <button onClick={onRemove}>remove</button>
+                    <button onClick={onToggle}>toggle</button>
                 </div>
             </div>
         </div>

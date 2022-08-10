@@ -6,7 +6,6 @@ const dataList =[
     {id:3,name:'chk3',text:'증권플러스 이용약관 확인 필수',isChk:false},
     {id:4,name:'chk4',text:'증권플러스 이용약관 확인 필수',isChk:false},
 ]
-
 const Test6 = () => {
     const [data,setData] = useState(dataList)
     const changeInput = (e)=>{
@@ -19,7 +18,7 @@ const Test6 = () => {
                 }
             }))
         }else{
-            setData(data.map(item=> item.name === name ? {...item, isChk : checked} : item ))
+            setData(data.map(item=> item.name === name ? {...item, isChk : checked} :item ))
         }
     }
     return (
@@ -39,7 +38,6 @@ const Test6 = () => {
                     <label>{item.text}</label>
                 </p>)
             }
-
         </div>
     );
 };

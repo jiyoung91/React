@@ -9,9 +9,6 @@ const Todos = () => {
         {id:2, text:'testtest', isChk:false},
     ])
     const no = useRef(data.length+1)
-    const onDel=(id)=>{
-        setData( data.filter(item=> item.id !== id )) //아닌것만 남기기(해당id는 빼고)
-    }
     const onAdd=(text)=>{
         setData([
             ...data,
@@ -21,6 +18,9 @@ const Todos = () => {
                 isChk:false
             }
         ])
+    }
+    const onDel=(id)=>{
+        setData( data.filter(item=> item.id !== id )) //아닌것만 남기기(해당id는 빼고)
     }
     const onMod=(id)=>{        
         setData(data.map(item=> item.id === id ? { ...item, isChk : !item.isChk }: item))

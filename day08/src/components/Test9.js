@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { useState } from 'react';
 
 const initialState = 0 
 const reducer = (state,action) =>{
@@ -14,9 +13,6 @@ const reducer = (state,action) =>{
             return state
     }
 }
-
-
-
 const Test9 = () => {
     const [count, dispatch] = useReducer(reducer,initialState)
     return (
@@ -27,7 +23,6 @@ const Test9 = () => {
                 <button onClick={()=>dispatch({type:'DECREMENT'}) }>감소</button>
                 <button onClick={()=>dispatch({type:'RESET'}) }>초기화</button>
             </p>
-            
         </div>
     );
 };
