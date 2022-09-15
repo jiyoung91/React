@@ -11,7 +11,6 @@ const ChangeColor = () => {
                 <button onClick={ () => onColor('green')}>green</button>
                 <button onClick={ () => onColor('blue')}>blue</button>
                 <button onClick={ () => onColor('tomato')}>tomato</button>
-                20개의 색 버튼이 있다는 ?
             </p>
         </div>
     );

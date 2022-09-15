@@ -13,8 +13,6 @@ const TodoProvider = ({ children }) => {
         {id:5, text:'김도현',  isChk :false },
     ])
     const [ text ,setText ] = useState('')
-
-
     //삭제
     const onDel  = ( id )  => {
         setTodos( todos.filter( todo  => todo.id !== id ))

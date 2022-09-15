@@ -15,7 +15,7 @@ export const todoSlice= createSlice({
     initialState ,
     reducers: {
         onDel: (state, action) => {    
-            state.todos = state.todos.filter( todo => todo.id !== action.payload )        
+            state.todos = state.todos.filter( todo => todo.id !== action.payload )   
         },               
         onAdd: (state, action) => {   
             state.todos  = [
@@ -28,7 +28,8 @@ export const todoSlice= createSlice({
             ]         
         },               
         onToggle: (state, action) => {      
-           state.todos = state.todos.map( todo => todo.id === action.payload ? {...todo, isChk: !todo.isChk} : todo )       
+           state.todos = state.todos.map( todo => todo.id === action.payload ? 
+                        {...todo, isChk: !todo.isChk} : todo )       
         },               
         changeInput: (state, action) => {  
              state.text  = action.payload         

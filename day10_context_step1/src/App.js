@@ -16,27 +16,22 @@ const App = () => {
       <TodoProvider>
         <Todos />     
       </TodoProvider> 
-      
       <hr/>
       <ColorProvider>
         <Color />
       </ColorProvider>
       <hr/>
-
-      <CountProvider>
-        <Count />
-      </CountProvider>
-
-      <hr/>
       <ChangeColorProvider>
         <ChangeColor />
       </ChangeColorProvider>
       <hr/>
-
+      <CountProvider>
+        <Count />
+      </CountProvider>
+      <hr/>
       <CntProvider>
         <Cnt />
       </CntProvider>
-
 
     </div>
   );

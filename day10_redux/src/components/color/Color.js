@@ -7,7 +7,7 @@ const Color = () => {
     const dispatch  = useDispatch()
     return (
         <div>
-            <h1 style={{color:color}}>컬러: {color} </h1>
+            <h1 style={{color:color}}>color : {color} </h1>
             <p>
                 <button onClick={ () => dispatch( red() )}>red</button>
                 <button onClick={ () => dispatch( green() )}>green</button>
