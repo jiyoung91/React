@@ -2,7 +2,7 @@ import { Stack, TextField , InputAdornment} from "@mui/material"
 import { useState } from 'react'
 import { setConstantValue } from "typescript"
 
-export const MultextField = () => {
+export const MuitextField = () => {
   const [value, setValue] = useState('')
 
   return (

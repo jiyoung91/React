@@ -5,7 +5,7 @@ import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
 import {useState} from 'react'
 
-export const MulButton = () => {
+export const MuiButton = () => {
   const [formats, setformats] = useState<string | null >(null)
   console.log({ formats})
   const handlelFormatChange =(_event: React.MouseEvent<HTMLElement>,undateFormats:string | null )=>{
