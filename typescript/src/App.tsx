@@ -26,6 +26,21 @@ import { MuiButton } from './materialUI/MuiButton';
 import { MuitextField } from './materialUI/MuitextField';
 import { MuiTypography } from './materialUI/MuiTypography';
 import { MuiList } from './materialUI/MuiList';
+import { MuiChip } from './materialUI/MuiChip';
+import { MuiTooltip } from './materialUI/MuiTooltip';
+import { MuiTable } from './materialUI/MuiTable';
+import { MuiAlert } from './materialUI/MuiAlert';
+import { MuiSnackbar } from './materialUI/MuiSnackbar';
+import { MuiDialog } from './materialUI/MuiDialog';
+import { MuiProgress } from './materialUI/MuiProgress';
+import { MuiSkeleton } from './materialUI/MuiSkeleton';
+import { MuiLoadingButton } from './materialUI/MuiLoadingButton';
+import { MuiPicker } from './materialUI/MuiPicker';
+import { MuiTabs } from './materialUI/MuiTabs';
+import { MuiTimeline } from './materialUI/MuiTimeline';
+import { MuiMasonry } from './materialUI/MuiMasonry';
+import { MuiResponsiveness } from './materialUI/MuiResponsiveness';
+import { CustomizingTheme } from './materialUI/CustomizingTheme';
 
 function App() {
   
@@ -59,9 +74,22 @@ function App() {
       {/* <MuiBottomNavigation /> */}
       {/* <MuiAvatar /> */}
       {/* <MuiBadge /> */}
-      <MuiList />
-      
-
+      {/* <MuiList /> */}
+      {/* <MuiChip /> */}
+      {/* <MuiTooltip /> */}
+      {/* <MuiTable /> */}
+      {/* <MuiAlert /> */}
+      {/* <MuiSnackbar /> */}
+      {/* <MuiDialog /> */}
+      {/* <MuiProgress /> */}
+      {/* <MuiSkeleton /> */}
+      {/* <MuiLoadingButton /> */}
+      {/* <MuiPicker /> */}
+      {/* <MuiTabs /> */}
+      {/* <MuiTimeline /> */}
+      {/* <MuiMasonry /> */}
+      {/* <MuiResponsiveness /> */}
+      {/* <CustomizingTheme /> */}
 
 
     </div>
